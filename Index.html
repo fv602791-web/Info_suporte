@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Info Suporte</title>
 
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:white;
+}
+
+.card{
+  width:340px;
+  max-width:90%;
+  padding:30px;
+  border-radius:20px;
+  background:rgba(0,0,0,0.45);
+  backdrop-filter:blur(15px);
+  text-align:center;
+  box-shadow:0 0 30px rgba(0,150,255,0.7);
+  animation:entrada 1s ease;
+}
+
+.logo{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  border:3px solid #00c3ff;
+  margin-bottom:10px;
+  animation:logoPulse 2s infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% { box-shadow: 0 0 15px #00c3ff; }
+  50% { box-shadow: 0 0 30px #00c3ff; }
+}
+
+h1{
+  font-size:24px;
+  margin-bottom:5px;
+}
+
+.nome{
+  font-size:14px;
+  opacity:0.8;
+  margin-bottom:15px;
+}
+
+.servicos{
+  font-size:13px;
+  opacity:0.9;
+  margin-bottom:15px;
+  line-height:1.5;
+}
+
+.promocao{
+  font-size:13px;
+  color:#00ffea;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+.button{
+  display:block;
+  text-decoration:none;
+  color:white;
+  padding:12px;
+  margin:8px 0;
+  border-radius:12px;
+  background:linear-gradient(90deg,#0072ff,#00c6ff);
+  transition:0.3s;
+  font-weight:bold;
+}
+
+.button:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 15px #00c6ff;
+}
+
+.button:active{
+  transform: scale(0.95);
+  box-shadow:0 0 10px #00c6ff;
+}
+
+.info{
+  margin-top:15px;
+  font-size:13px;
+  opacity:0.8;
+  line-height:1.4;
+}
+
+@keyframes entrada{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <img class="logo" src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Logo Info Suporte">
+
+  <h1>Info Suporte</h1>
+
+  <div class="nome">
+    Assistência técnica em informática<br>
+    Felipe
+  </div>
+
+  <div class="servicos">
+    <strong>Serviços:</strong><br>
+    Conserto de computadores e celulares<br>
+    Formatação e limpeza<br>
+    Troca de telas e SSD
+  </div>
+
+  <div class="promocao">
+    Promoção: desconto de 10% para novos clientes!
+  </div>
+
+  <a class="button" href="https://wa.me/5547996345593" target="_blank">
+    💬 Falar no WhatsApp
+  </a>
+
+  <a class="button" href="https://maps.app.goo.gl/GkV75Fi4DgvzZgvk8" target="_blank">
+    📍 Ver localização
+  </a>
+
+  <a class="button" href="https://www.instagram.com/info_suportee" target="_blank">
+    📷 Instagram
+  </a>
+
+  <div class="info">
+    ⏰ Atendimento:<br>
+    Seg-Sex: 08:00 às 17:30<br>
+    Sáb: 08:00 às 12:00
+  </div>
+
+</div>
+
+</body>
+</html>
